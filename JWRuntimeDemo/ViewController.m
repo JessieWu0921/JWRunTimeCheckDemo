@@ -28,10 +28,15 @@
 //    [self getAllMethods];
     
     //
-    UILabel *label = [UILabel new];
-    label.text = @"fheufeiojfoesjehfefheufheuhfeufheuhfkshkfjheuffbhjsnckdkjslkfejofjsleksljekkhguehguksejkjfiegjekhfeisnkfj\njfoejfeioajfjoaeofjojeoifajeiojfoeijaoe\n";
-    CGRect labelFrame = [label textRectForBounds:CGRectMake(10, 100, 100, 100) limitedToNumberOfLines:3];
-    NSLog(@"labelframe is: %@", [NSValue valueWithCGRect:labelFrame]);
+//    UILabel *label = [UILabel new];
+//    label.text = @"fheufeiojfoesjehfefheufheuhfeufheuhfkshkfjheuffbhjsnckdkjslkfejofjsleksljekkhguehguksejkjfiegjekhfeisnkfj\njfoejfeioajfjoaeofjojeoifajeiojfoeijaoe\n";
+//    CGRect labelFrame = [label textRectForBounds:CGRectMake(10, 100, 100, 100) limitedToNumberOfLines:3];
+//    NSLog(@"labelframe is: %@", [NSValue valueWithCGRect:labelFrame]);
+    
+//    JWPerson *person = [[JWPerson alloc] init];
+//    [person definedFunction];
+    
+    [self getAllMethods:[JWPerson class]];
 }
 
 #pragma mark - methods
@@ -61,9 +66,9 @@
     }
 }
 
-- (void)getAllMethods {
-    Class currentClass = [UILabel class];
-    while ([currentClass isEqual:[UILabel class]]) {
+- (void)getAllMethods:(Class)class {
+    Class currentClass = class;
+    while ([currentClass isEqual:class]) {
         unsigned int methodCount = 0;
         Method *methodList = class_copyMethodList(currentClass, &methodCount);
         unsigned int i = 0;
