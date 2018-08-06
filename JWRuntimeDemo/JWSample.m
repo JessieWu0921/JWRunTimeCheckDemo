@@ -10,4 +10,8 @@
 
 @implementation JWSample
 
+- (NSString *)sampleStringToLoad {
+    return _sampleStringToLoad;
+}
+
 @end

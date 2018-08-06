@@ -10,6 +10,12 @@
 
 @implementation JWSampleString
 
+#pragma mark - setter & getter
+- (NSString *)sampleStringToLoad {
+    return _sampleStringToLoad;
+}
+
+#pragma mark - methods
 - (void)loadingString {
     self.sampleStringToLoad = @"hello world.";
 }

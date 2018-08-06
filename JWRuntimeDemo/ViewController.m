@@ -62,7 +62,7 @@
     object_setClass(sample, [JWSampleString class]);
     //调用JWSampleString中的方法 loadingString（）
     [sample performSelector:@selector(loadingString)];
-    //将isa 指回 JWSample
+    //将isa 指回 JWSample (注释掉此行可以追踪下sampleStringToLoad可以验证isa是否已经指向了新的class)
     object_setClass(sample, [JWSample class]);
     
     NSLog(@"%@", sample.sampleStringToLoad);
