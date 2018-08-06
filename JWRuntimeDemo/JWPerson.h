@@ -8,10 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol JWPersonProtocol
+
+@required
+- (void)firstProtocolFunction;
+
+@optional
+- (void)secondProtocolFunction;
+
+@end
+
 typedef NS_ENUM(NSUInteger, JWPersonGenderType) {
-    kJWPersonGenderMale = 1 >> 1,
-    kJWPersonGenderFemale = 1 >> 2,
-    kJWPersonGenderDescripe = 1 >>3
+    kJWPersonGenderMale = 1 << 1,
+    kJWPersonGenderFemale = 1 << 2,
+    kJWPersonGenderDescripe = 1 << 3
 };
 
 @interface JWPerson : NSObject<NSCopying>

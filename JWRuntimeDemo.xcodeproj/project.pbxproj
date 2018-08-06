@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65825B79210F062600C2A3C7 /* JWPerson+ForthSameFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 65825B78210F062600C2A3C7 /* JWPerson+ForthSameFunction.m */; };
+		65825B7C210F076600C2A3C7 /* JWPerson+sameFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 65825B7B210F076600C2A3C7 /* JWPerson+sameFunction.m */; };
+		65825C482118286800C2A3C7 /* JWSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 65825C472118286800C2A3C7 /* JWSample.m */; };
+		65825C4B2118291800C2A3C7 /* JWSampleString.m in Sources */ = {isa = PBXBuildFile; fileRef = 65825C4A2118291800C2A3C7 /* JWSampleString.m */; };
+		6585417621085F4D00F062AC /* JWPerson+thirdSameFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6585417521085F4D00F062AC /* JWPerson+thirdSameFunction.m */; };
 		65B7537F210718E100DDAFB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7537E210718E100DDAFB7 /* AppDelegate.m */; };
 		65B75382210718E100DDAFB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B75381210718E100DDAFB7 /* ViewController.m */; };
 		65B75385210718E100DDAFB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B75383210718E100DDAFB7 /* Main.storyboard */; };
@@ -16,10 +21,20 @@
 		65B753952107195500DDAFB7 /* UIControl+FastEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B753942107195400DDAFB7 /* UIControl+FastEvent.m */; };
 		65B753982107202E00DDAFB7 /* UILabel+textColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B753972107202E00DDAFB7 /* UILabel+textColor.m */; };
 		65B7539E2107208600DDAFB7 /* JWPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7539D2107208600DDAFB7 /* JWPerson.m */; };
-		65B753A12107381700DDAFB7 /* JWPerson+sameFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B753A02107381700DDAFB7 /* JWPerson+sameFunction.m */; };
+		65B753A42108165E00DDAFB7 /* JWPerson+secondSameFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B753A32108165E00DDAFB7 /* JWPerson+secondSameFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65825B77210F062600C2A3C7 /* JWPerson+ForthSameFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWPerson+ForthSameFunction.h"; sourceTree = "<group>"; };
+		65825B78210F062600C2A3C7 /* JWPerson+ForthSameFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JWPerson+ForthSameFunction.m"; sourceTree = "<group>"; };
+		65825B7A210F076600C2A3C7 /* JWPerson+sameFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JWPerson+sameFunction.h"; sourceTree = "<group>"; };
+		65825B7B210F076600C2A3C7 /* JWPerson+sameFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JWPerson+sameFunction.m"; sourceTree = "<group>"; };
+		65825C462118286800C2A3C7 /* JWSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWSample.h; sourceTree = "<group>"; };
+		65825C472118286800C2A3C7 /* JWSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWSample.m; sourceTree = "<group>"; };
+		65825C492118291800C2A3C7 /* JWSampleString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWSampleString.h; sourceTree = "<group>"; };
+		65825C4A2118291800C2A3C7 /* JWSampleString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWSampleString.m; sourceTree = "<group>"; };
+		6585417421085F4D00F062AC /* JWPerson+thirdSameFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWPerson+thirdSameFunction.h"; sourceTree = "<group>"; };
+		6585417521085F4D00F062AC /* JWPerson+thirdSameFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JWPerson+thirdSameFunction.m"; sourceTree = "<group>"; };
 		65B7537A210718E100DDAFB7 /* JWRuntimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWRuntimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B7537D210718E100DDAFB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65B7537E210718E100DDAFB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,8 +51,8 @@
 		65B753972107202E00DDAFB7 /* UILabel+textColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+textColor.m"; sourceTree = "<group>"; };
 		65B7539C2107208600DDAFB7 /* JWPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWPerson.h; sourceTree = "<group>"; };
 		65B7539D2107208600DDAFB7 /* JWPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWPerson.m; sourceTree = "<group>"; };
-		65B7539F2107381700DDAFB7 /* JWPerson+sameFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWPerson+sameFunction.h"; sourceTree = "<group>"; };
-		65B753A02107381700DDAFB7 /* JWPerson+sameFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JWPerson+sameFunction.m"; sourceTree = "<group>"; };
+		65B753A22108165E00DDAFB7 /* JWPerson+secondSameFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JWPerson+secondSameFunction.h"; sourceTree = "<group>"; };
+		65B753A32108165E00DDAFB7 /* JWPerson+secondSameFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JWPerson+secondSameFunction.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +100,18 @@
 				65B753972107202E00DDAFB7 /* UILabel+textColor.m */,
 				65B7539C2107208600DDAFB7 /* JWPerson.h */,
 				65B7539D2107208600DDAFB7 /* JWPerson.m */,
-				65B7539F2107381700DDAFB7 /* JWPerson+sameFunction.h */,
-				65B753A02107381700DDAFB7 /* JWPerson+sameFunction.m */,
+				65825B77210F062600C2A3C7 /* JWPerson+ForthSameFunction.h */,
+				65825B78210F062600C2A3C7 /* JWPerson+ForthSameFunction.m */,
+				65B753A22108165E00DDAFB7 /* JWPerson+secondSameFunction.h */,
+				65B753A32108165E00DDAFB7 /* JWPerson+secondSameFunction.m */,
+				6585417421085F4D00F062AC /* JWPerson+thirdSameFunction.h */,
+				6585417521085F4D00F062AC /* JWPerson+thirdSameFunction.m */,
+				65825B7A210F076600C2A3C7 /* JWPerson+sameFunction.h */,
+				65825B7B210F076600C2A3C7 /* JWPerson+sameFunction.m */,
+				65825C462118286800C2A3C7 /* JWSample.h */,
+				65825C472118286800C2A3C7 /* JWSample.m */,
+				65825C492118291800C2A3C7 /* JWSampleString.h */,
+				65825C4A2118291800C2A3C7 /* JWSampleString.m */,
 			);
 			path = JWRuntimeDemo;
 			sourceTree = "<group>";
@@ -164,9 +189,14 @@
 			files = (
 				65B75382210718E100DDAFB7 /* ViewController.m in Sources */,
 				65B7539E2107208600DDAFB7 /* JWPerson.m in Sources */,
+				6585417621085F4D00F062AC /* JWPerson+thirdSameFunction.m in Sources */,
+				65825C482118286800C2A3C7 /* JWSample.m in Sources */,
+				65825B7C210F076600C2A3C7 /* JWPerson+sameFunction.m in Sources */,
+				65825C4B2118291800C2A3C7 /* JWSampleString.m in Sources */,
+				65825B79210F062600C2A3C7 /* JWPerson+ForthSameFunction.m in Sources */,
 				65B7538D210718E300DDAFB7 /* main.m in Sources */,
+				65B753A42108165E00DDAFB7 /* JWPerson+secondSameFunction.m in Sources */,
 				65B753952107195500DDAFB7 /* UIControl+FastEvent.m in Sources */,
-				65B753A12107381700DDAFB7 /* JWPerson+sameFunction.m in Sources */,
 				65B7537F210718E100DDAFB7 /* AppDelegate.m in Sources */,
 				65B753982107202E00DDAFB7 /* UILabel+textColor.m in Sources */,
 			);

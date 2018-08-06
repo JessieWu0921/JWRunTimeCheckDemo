@@ -12,6 +12,9 @@
 #import "UIControl+FastEvent.h"
 #import "UILabel+textColor.h"
 
+#import "JWSample.h"
+#import "JWSampleString.h"
+
 #import <objc/runtime.h>
 #import <objc/objc.h>
 
@@ -35,11 +38,36 @@
     
 //    JWPerson *person = [[JWPerson alloc] init];
 //    [person definedFunction];
+//    [self getIMPForSel:@selector(definedFunction)];
     
-    [self getAllMethods:[JWPerson class]];
+//    [self getClassInstanceHash];
+    
+//    [self getAllMethods:[JWPerson class]];
+    
+//    [self getAllCategory:[JWPerson class]];
+    
+//    [self getClassList:[JWPerson class]];
+    
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", @""]] options:@{} completionHandler:nil];
+    
+    //isa swizzling
+    [self changClassInstanceIsa];
 }
 
 #pragma mark - methods
+//isa swizzling
+- (void)changClassInstanceIsa {
+    JWSample *sample = [JWSample new];
+    //isa 指向 JWSampleString
+    object_setClass(sample, [JWSampleString class]);
+    //调用JWSampleString中的方法 loadingString（）
+    [sample performSelector:@selector(loadingString)];
+    //将isa 指回 JWSample
+    object_setClass(sample, [JWSample class]);
+    
+    NSLog(@"%@", sample.sampleStringToLoad);
+}
+
 - (void)checkObjectInfo {
     //ivar & property
     Class currentClass = [JWPerson class];
@@ -82,12 +110,43 @@
     }
 }
 
-- (void)getAllCategory {
-//    Class currentClass = [UILabel class];
-//    while ([currentClass isEqual:[UILabel class]]) {
-//        unsigned int categoryCount = 0;
-//        Category category =
-//    }
+- (void)getIMPForSel:(SEL)selector {
+    Class currentClass = [JWPerson class];
+    IMP imp = class_getMethodImplementation(currentClass, selector);
+    NSLog(@"%p", imp);
+}
+
+- (void)getClassList:(Class)class {
+//    Class currentClass = class;
+//    int classCount = 0;
+//    objc_getClassList(&currentClass, classCount);
+    
+    while ([class isEqual:[JWPerson class]]) {
+        unsigned int classCount = 0;
+        Class *classList = objc_copyClassList(&classCount);
+        unsigned int i = 0;
+        for (; i < classCount; i++) {
+            NSLog(@" %@", [NSString stringWithCString:class_getName(classList[i]) encoding:NSUTF8StringEncoding]); //[NSString stringWithCString:class_getName(class) encoding:NSUTF8StringEncoding],
+        }
+        
+        class = [NSObject class];
+    }
+}
+
+- (void)classIsa:(Class)class {
+    
+}
+
+- (void)getClassInstanceHash {
+    NSString *string1 = @"hello";
+    JWPerson *person = [JWPerson new];
+    [JWPerson hash];
+
+    NSLog(@"%@ - %zi, %@ - %zi", string1, string1.hash, person, person.hash);
+}
+
+- (void)getAllCategory:(Class)class {
+    //10.5以后 runtime中删除了objc_category的函数，无法获取到关于类的categorylist的信息。
 }
 
 @end

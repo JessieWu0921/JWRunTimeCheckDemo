@@ -25,6 +25,11 @@
     return self;
 }
 
+#pragma mark - class method
++ (NSUInteger)hash {
+    return 105827998809342;
+}
+
 #pragma mark - method
 - (void)definedFunction {
     NSLog(@"%s", __func__);
